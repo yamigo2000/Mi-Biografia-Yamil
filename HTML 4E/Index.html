@@ -1,0 +1,220 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<style>
+#navlist{position:relative;}
+#navlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#navlist li, #navlist a{height:44px;display:block;}
+
+#home{left:0px;width:46px;}
+#home{background:url('img_navegacion.gif') 0 0;}
+
+#prev{left:63px;width:43px;}
+#prev{background:url('img_navegacion.gif') -48px 0;}
+
+#next{left:129px;width:43px;}
+#next{background:url('img_navegacion.gif') -91px 0;}
+</style>
+<style>
+	#navegacion{
+		width: 100%;
+		height: 9%;
+		top: 0%;
+		left: 0;
+		position: absolute;
+		background-color: #8CF6FF;
+	}
+</style>
+<style>
+	#PiePagina{
+		width: 25%;
+		height: 50%;
+		left: 37%;
+		top: 45%;
+		position: absolute;
+	}
+</style>
+<style>
+	#nombre{
+		width: 50%;
+		height: 25%;
+		left: 35%;
+		top: 47%;
+		position: absolute;
+	}
+</style>
+<style>
+#foto{
+	width: 15%;
+	height: 30%;
+	left: 42%;
+	top: 69%;
+	background-color: blue;
+	position: absolute;
+	}
+</style>
+<style>
+	#esquinas
+{
+ border:2px solid #a1a1a1;
+ padding:10px 40px;
+ background:#dddddd;
+ width:300px;
+ border-radius:20px;
+}
+</style>
+</head> 
+<body>
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>MI AUTOBIOGRAFIA</h1>
+	</div>
+	<div data-role="content">
+		<ul data-role="listview">
+			<li><a href="#page2">¿QUIEN SOY?</a></li>
+            <li><a href="#page3">¿QUE ME GUSTA?</a></li>
+			<li><a href="#page4">MIS PASATIEMPOS FAVORITOS</a></li>
+			<li><a href="#page5">COMO ME VEO EN UN FUTURO</a></li>
+			<li><a href="#page6">AGRADECIMIENTOS</a></li>
+		</ul>			
+	</div>
+	<div data-role="footer">
+		<h4>NOMBRE</h4>
+	</div>
+	<div id="nombre"><div id="esquinas"> <h1 align="center">Yamil Antonio Garcia Salazar</h1></div></div>
+  <div id="foto"><img src="/Users/Ivan/Documents/HTML 4E/IMAGENES/KbqTG.jpg" width="100%" height="100%"></div>
+</div>
+
+<div data-role="page" id="page2">
+<br>
+<br>
+<br>
+	<div id="navegacion">
+	<ul id="navlist">
+  <li id="home"><a href="#page"></a></li>
+  <li id="prev"><a href="#page"></a></li>
+  <li id="next"><a href="#page3"></a></li>
+</ul>
+</div>	
+	<div data-role="header">
+		<h1>¿Quien soy?</h1>
+	</div>
+	<div data-role="content">
+		<font color="#07003B" size="5">
+			Mi nombre es Yamil Antonio Garcia Salazar, y yo soy alumno del CBTIS No.86 que actualmente cursa la carrera de programacion, yo me considero una persona muy centrada en cuanto a lo que quiero, anque tambien tengo otras caracteriscas  que me hacer ser yo, como los son; desorganizado, flojo, centrado, etc. Pero en conclusion podria decir que soy joven con muchas ganas de superarme dia a dia en lo que me gusta hacer.Espero ser una persona que ayude a los demas.
+		</font>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+	<div id="PiePagina"><img src="/Users/Ivan/Documents/HTML 4E/IMAGENES/logo_colores_cbtis_jpg[1].jpg" width="100%" height="100%"></div>
+</div>
+
+<div data-role="page" id="page3">
+<br>
+<br>
+<br>
+	<div id="navegacion">
+	<ul id="navlist">
+  <li id="home"><a href="#page"></a></li>
+  <li id="prev"><a href="#page2"></a></li>
+  <li id="next"><a href="#page4"></a></li>
+</ul>
+</div>	
+	<div data-role="header">
+		<h1>¿Què me gusta?</h1>
+	</div>
+	<div data-role="content">
+	<font color="#07003B" size="5">	
+		En lo particular no tengo una sola cosa por la cual me podria decantar y decir que me gusta especificamente pero pues las principales cosas que me gustan son; tener tiempo con mi familia, jugar futbol, jugar video juegos, y algunos temas de mi carrera, etc.Centralizando esas son algunas de las cosas que mas me gustan que las difruto cuando las realizo ya que avences no todo es mi agrado.
+		</font>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+	<div id="PiePagina"><img src="/Users/Ivan/Documents/HTML 4E/IMAGENES/giphy.gif" width="100%" height="100%"></div>
+</div>
+
+<div data-role="page" id="page4">
+<br>
+<br>
+<br>
+	<div id="navegacion">
+	<ul id="navlist">
+  <li id="home"><a href="#page"></a></li>
+  <li id="prev"><a href="#page3"></a></li>
+  <li id="next"><a href="#page5"></a></li>
+</ul>
+</div>
+	<div data-role="header">
+		<h1>Mis pasatiempos favoritos</h1>
+	</div>
+	<div data-role="content">
+	<font color="#07003B" size="5">
+		Principal mente tengo dos pasatiempos favoritos los cuales es jugar video juegos y jugar futobol, desde pequeño me atrajo mucho el futbol y desde esntonces lo juego y mas que verlo como una competencia lo veo como uan forma de convivir con mis amigos, hermanos y la gran parte de mi familia, pues los video juegos es algo mas secundario pero pues igualmente disfruto jugar mi consola.Pero busco el no desefocar mi proposito principal.
+	</font>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+	<div id="PiePagina"><img src="/Users/Ivan/Documents/HTML 4E/IMAGENES/cabecita.gif" width="100%" height="100%"></div>
+</div>
+
+<div data-role="page" id="page5">
+<br>
+<br>
+<br>
+	<div id="navegacion">
+	<ul id="navlist">
+  <li id="home"><a href="#page"></a></li>
+  <li id="prev"><a href="#page4"></a></li>
+  <li id="next"><a href="#page6"></a></li>
+</ul>
+</div>
+	<div data-role="header">
+		<h1>¿Como me veo en un futuro?</h1>
+	</div>
+	<div data-role="content">	
+		<font color="#07003B" size="5">
+			Me veo como un profesionista exitos, espero tener una familia igual de buena que la que tengo y rodeado de personas que me apresian tal como soy, me veo como una persona la cual va mejorando dia a dia y aprendiendo cosas nuevas para mi bien.
+		</font>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+    <div id="PiePagina"><img src="/Users/Ivan/Documents/HTML 4E/IMAGENES/Imágenes-de-Reflexión-GIF-11.gif" width="100%" height="100%"></div>
+</div>
+
+<div data-role="page" id="page6">
+<br>
+<br>
+<br>
+	<div id="navegacion">
+	<ul id="navlist">
+  <li id="home"><a href="#page"></a></li>
+  <li id="prev"><a href="#page5"></a></li>
+  <li id="next"><a href="#page"></a></li>
+</ul>
+</div>
+	<div data-role="header">
+		<h1>Agradecimientos</h1>
+	</div>
+	<div data-role="content">
+	<font color="#07003B" size="5">
+		Doy agradecimientos principalmente a mis padres por ayudarme a formarme tal como soy, a todos mis amigos y familiares por tener su apoyo incondicional para todo y mis maestros por tener la paciencia para ayudarme con mis estudios y ayudarme a ser alguien en la vida por eso gracias a todos ustedes.
+	</font>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+	<div id="PiePagina"><img src="/Users/Ivan/Documents/HTML 4E/IMAGENES/graciasREVERENCIA.gif" width="100%" height="100%"></div>
+</div>
+
+</body>
+</html>
